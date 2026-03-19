@@ -214,7 +214,7 @@ footer{padding:28px 6%;display:flex;justify-content:space-between;align-items:ce
     </div>
     <div>
       <div class="info-row"><span class="info-k">Location</span><span class="info-v">San Jose, CA</span></div>
-      <div class="info-row"><span class="info-k">Email</span><span class="info-v"><a href="/cdn-cgi/l/email-protection#315259545f42581f4944714850595e5e1f525e5c"><span class="__cf_email__" data-cfemail="b6d5ded3d8c5df98cec3f6cfd7ded9d998d5d9db">[email&#160;protected]</span></a></span></div>
+      <div class="info-row"><span class="info-k">Email</span><span class="info-v"><a href="#" onclick="window.location='mai'+'lto:'+'chensi.xu'+'@yahoo.com';return false;">chensi.xu@yahoo.com</a></span></div>
       <div class="info-row"><span class="info-k">LinkedIn</span><span class="info-v"><a href="https://linkedin.com/in/chensixu" target="_blank">linkedin.com/in/chensixu</a></span></div>
       <div class="info-row"><span class="info-k">Focus</span><span class="info-v">TPM · V&V · Connected Systems</span></div>
       <div class="info-row"><span class="info-k">Industries</span><span class="info-v">MedTech · Mobile · IoT</span></div>
@@ -451,7 +451,7 @@ footer{padding:28px 6%;display:flex;justify-content:space-between;align-items:ce
     <div class="c-items">
       <div class="c-row">
         <div class="c-icon">📧</div>
-        <div><div class="c-label">Email</div><div class="c-val"><a href="/cdn-cgi/l/email-protection#37545f5259445e194f42774e565f58581954585a"><span class="__cf_email__" data-cfemail="a5c6cdc0cbd6cc8bddd0e5dcc4cdcaca8bc6cac8">[email&#160;protected]</span></a></div></div>
+        <div><div class="c-label">Email</div><div class="c-val"><a href="#" onclick="window.location='mai'+'lto:'+'chensi.xu'+'@yahoo.com';return false;">chensi.xu@yahoo.com</a></div></div>
       </div>
       <div class="c-row">
         <div class="c-icon">📍</div>
@@ -500,7 +500,7 @@ footer{padding:28px 6%;display:flex;justify-content:space-between;align-items:ce
   <div class="footer-copy">2026 · San Jose, CA</div>
 </footer>
 
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+<script>
 async function handleSubmit(e) {
   e.preventDefault();
   var btn = e.target.querySelector('.f-btn');
@@ -510,9 +510,21 @@ async function handleSubmit(e) {
     var res = await fetch('https://formspree.io/f/mbdzwpep', {
       method: 'POST',
       body: new FormData(e.target),
-      headers
-      { 'Accept': 'application/json' }
+      headers: { 'Accept': 'application/json' }
     });
     if (res.ok) {
       document.getElementById('formOk').style.display = 'block';
-      bt
+      btn.style.display = 'none';
+      e.target.reset();
+    } else {
+      btn.textContent = 'Try again';
+      btn.disabled = false;
+    }
+  } catch(err) {
+    btn.textContent = 'Try again';
+    btn.disabled = false;
+  }
+}
+</script>
+</body>
+</html>
