@@ -215,7 +215,7 @@ footer{padding:28px 6%;display:flex;justify-content:space-between;align-items:ce
     </div>
     <div>
       <div class="info-row"><span class="info-k">Location</span><span class="info-v">San Jose, CA</span></div>
-      <div class="info-row"><span class="info-k">Email</span><span class="info-v"><a href="#" onclick="window.location='mai'+'lto:'+'chensi.xu'+'@yahoo.com';return false;">chensi.xu@yahoo.com</a></span></div>
+      <div class="info-row"><span class="info-k">Email</span><span class="info-v"><a href="#" onclick="window.location='mai'+'lto:'+'chensi.xu'+'@yahoo.com';return false;"><span class="__cf_email__" data-cfemail="5b38333e35283275232e1b223a33343475383436">[email&#160;protected]</span></a></span></div>
       <div class="info-row"><span class="info-k">LinkedIn</span><span class="info-v"><a href="https://linkedin.com/in/chensixu" target="_blank">linkedin.com/in/chensixu</a></span></div>
       <div class="info-row"><span class="info-k">Focus</span><span class="info-v">TPM · V&V · Connected Systems</span></div>
       <div class="info-row"><span class="info-k">Industries</span><span class="info-v">MedTech · Mobile · IoT</span></div>
@@ -453,30 +453,50 @@ footer{padding:28px 6%;display:flex;justify-content:space-between;align-items:ce
 <section id="testimonials" class="dark">
   <div class="eyebrow">Testimonials</div>
   <h2>What colleagues <em>say</em></h2>
-  <p class="sec-sub">Replace these placeholders with real quotes from LinkedIn recommendations.</p>
+  <p class="sec-sub">Recommendations from LinkedIn colleagues at BioIntelliSense and Striiv.</p>
   <div class="t-grid">
     <div class="t-card">
-      <p class="t-text">"Chensi's V&amp;V work is exceptionally thorough. Her ability to design comprehensive test plans while staying aligned with regulatory requirements made her invaluable to our team."</p>
+      <p class="t-text">"Chensi is the embodiment of resilience and growth. Whenever he would receive feedback, he would take note and immediately put those changes into practice. As a Project Manager, he grew with the team and developed an understanding of the team's velocity. He was very strategic with scheduling, added reasonable buffer, and scheduled enough time for testing. Chensi takes every project cycle as an opportunity to learn. He is the prime example of someone who is dedicated and hungry for growth."</p>
       <div class="t-author">
-        <div class="t-av">A</div>
+        <div class="t-av">E</div>
         <div>
-          <div class="t-name">Colleague Name</div>
-          <div class="t-role">Title · Company</div>
+          <div class="t-name">Eleanor Drake</div>
+          <div class="t-role">Principal Product Marketing &amp; Design Manager · BioIntelliSense</div>
         </div>
       </div>
     </div>
     <div class="t-card">
-      <p class="t-text">"As a project manager, Chensi kept complex cross-functional programs on track. Her communication across onshore and offshore teams was always clear and outcome-focused."</p>
+      <p class="t-text">"Chensi is an awesome project manager and teammate. His dedication and work ethic has allowed him to thrive in his role. Whether it be driving a project to completion or working with the team on creating processes, Chensi has always stepped up to the challenge. With his ability to quickly learn and his can-do attitude, he was easily able to handle anything our small start-up could throw his way."</p>
       <div class="t-author">
-        <div class="t-av">B</div>
+        <div class="t-av">H</div>
         <div>
-          <div class="t-name">Colleague Name</div>
-          <div class="t-role">Title · Company</div>
+          <div class="t-name">Henry Leung</div>
+          <div class="t-role">Technical Product / Solution Engineering · BioIntelliSense</div>
+        </div>
+      </div>
+    </div>
+    <div class="t-card">
+      <p class="t-text">"Chensi is a great project manager who is never afraid to take on new challenges. His excellent work ethic and innate willingness to put in the extra work to get things done made him a valuable PM at Striiv. I had an amazing experience working with Chensi, and found him easily approachable and a great team member. He will undoubtedly bring great value to any organization."</p>
+      <div class="t-author">
+        <div class="t-av">D</div>
+        <div>
+          <div class="t-name">Daniel Chou</div>
+          <div class="t-role">Director of Cloud Engineering · BioIntelliSense</div>
+        </div>
+      </div>
+    </div>
+    <div class="t-card">
+      <p class="t-text">"Chensi joined Striiv as a Jr. Project Manager with very little experience, but a wonderful work ethic and attitude. Chensi had a strong appetite to work and learn, and over the years, it has really paid off. He has been driving and leading the project management of iOS and Android apps and has overseen the successful launches of multiple large projects, including projects delivered to Pfizer and United Healthcare."</p>
+      <div class="t-author">
+        <div class="t-av">D</div>
+        <div>
+          <div class="t-name">David Wang</div>
+          <div class="t-role">CEO &amp; Co-Founder · BioIntelliSense</div>
         </div>
       </div>
     </div>
   </div>
-  <p class="t-note">More on <a href="https://linkedin.com/in/chensixu" target="_blank">LinkedIn</a></p>
+  <p class="t-note">View full recommendations on <a href="https://linkedin.com/in/chensixu" target="_blank">LinkedIn →</a></p>
 </section>
 
 <section id="contact">
@@ -487,7 +507,7 @@ footer{padding:28px 6%;display:flex;justify-content:space-between;align-items:ce
     <div class="c-items">
       <div class="c-row">
         <div class="c-icon">📧</div>
-        <div><div class="c-label">Email</div><div class="c-val"><a href="#" onclick="window.location='mai'+'lto:'+'chensi.xu'+'@yahoo.com';return false;">chensi.xu@yahoo.com</a></div></div>
+        <div><div class="c-label">Email</div><div class="c-val"><a href="#" onclick="window.location='mai'+'lto:'+'chensi.xu'+'@yahoo.com';return false;"><span class="__cf_email__" data-cfemail="37545f5259445e194f42774e565f58581954585a">[email&#160;protected]</span></a></div></div>
       </div>
       <div class="c-row">
         <div class="c-icon">📍</div>
@@ -549,6 +569,7 @@ async function handleSubmit(e) {
       headers: { 'Accept': 'application/json' }
     });
     if (res.ok) {
+      
       document.getElementById('formOk').style.display = 'block';
       btn.style.display = 'none';
       e.target.reset();
