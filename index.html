@@ -128,11 +128,15 @@ h2 em{font-style:italic;color:var(--blue)}
 footer{padding:28px 6%;display:flex;justify-content:space-between;align-items:center;border-top:1px solid var(--border)}
 .footer-name{font-family:'DM Serif Display',serif;font-size:16px;color:var(--muted)}
 .footer-copy{font-size:13px;color:#c0ccd8}
-.fade{opacity:0;transform:translateY(20px);transition:opacity 0.6s ease,transform 0.6s ease}
-.fade.visible{opacity:1;transform:translateY(0)}
-.fade:nth-child(2){transition-delay:0.08s}
-.fade:nth-child(3){transition-delay:0.16s}
-.fade:nth-child(4){transition-delay:0.24s}
+.fade{opacity:1;transform:translateY(0)}
+.fade.animate{opacity:0;transform:translateY(20px);transition:opacity 0.6s ease,transform 0.6s ease}
+.fade.animate.visible{opacity:1;transform:translateY(0)}
+.fade.animate:nth-child(2){transition-delay:0.08s}
+.fade.animate:nth-child(3){transition-delay:0.16s}
+.fade.animate:nth-child(4){transition-delay:0.24s}
+.exp-item{display:grid;grid-template-columns:200px 1fr;gap:48px;padding:40px 0;border-top:1px solid var(--border)}
+.proj-card{border:1px solid var(--border);border-radius:10px;padding:30px;background:var(--white);transition:border-color 0.2s,box-shadow 0.2s}
+.proj-card:hover{border-color:var(--blue);box-shadow:0 4px 20px rgba(58,95,138,0.1)}
 @media(max-width:860px){
   #hero{grid-template-columns:1fr}
   .hero-card{display:none}
@@ -444,4 +448,3 @@ async function handleSubmit(e) {
     const res = await fetch('https://formspree.io/f/mbdzwpep', {
       method: 'POST',
       body: new FormData(e.target),
-   
