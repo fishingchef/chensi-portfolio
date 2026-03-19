@@ -201,7 +201,7 @@ footer{padding:28px 6%;display:flex;justify-content:space-between;align-items:ce
     </div>
     <div class="fade">
       <div class="info-row"><span class="info-k">Location</span><span class="info-v">San Jose, CA</span></div>
-      <div class="info-row"><span class="info-k">Email</span><span class="info-v"><a href="mailto:chensi.xu@yahoo.com">chensi.xu@yahoo.com</a></span></div>
+      <div class="info-row"><span class="info-k">Email</span><span class="info-v"><a href="/cdn-cgi/l/email-protection#ceada6aba0bda7e0b6bb8eb7afa6a1a1e0ada1a3"><span class="__cf_email__" data-cfemail="1f7c777a716c7631676a5f667e777070317c7072">[email&#160;protected]</span></a></span></div>
       <div class="info-row"><span class="info-k">LinkedIn</span><span class="info-v"><a href="https://linkedin.com/in/chensixu" target="_blank">linkedin.com/in/chensixu</a></span></div>
       <div class="info-row"><span class="info-k">Focus</span><span class="info-v">V&V · QA · Technical PM</span></div>
       <div class="info-row"><span class="info-k">Industries</span><span class="info-v">MedTech · Mobile · IoT</span></div>
@@ -223,6 +223,9 @@ footer{padding:28px 6%;display:flex;justify-content:space-between;align-items:ce
         <li>Designed and executed V&amp;V test plans for mobile applications (iOS/Android), firmware, and device gateways</li>
         <li>Conducted functional, regression, compatibility, and integration testing ensuring regulatory compliance</li>
         <li>Managed beta and internal dogfood testing programs, coordinating devices, test plans, and user feedback</li>
+        <li>Prepared and documented comprehensive test reports capturing results, findings, and sign-off status</li>
+        <li>Identified, reported, and helped resolve defects and inconsistencies within tests and the test framework</li>
+        <li>Created and maintained work instructions, processes, and guides for team use and onboarding reference</li>
         <li>Documented test protocols, results, and defect reports ensuring traceability</li>
         <li>Partnered cross-functionally with engineering, product, and QA to reproduce and resolve issues</li>
         <li>Supported release validation confirming firmware and app versions were stable before production</li>
@@ -237,8 +240,9 @@ footer{padding:28px 6%;display:flex;justify-content:space-between;align-items:ce
         <li>Led mobile Android and iOS projects coordinating onshore and offshore teams for timely delivery</li>
         <li>Directed BioHub Wi-Fi gateway from concept through production — scope, timelines, stakeholder alignment</li>
         <li>Managed multiple concurrent programs, prioritizing across engineering, QA, and product teams</li>
-        <li>Managed full-cycle physiological data collection and curation for ML model training</li>
-        <li>Implemented process improvements enhancing team efficiency and delivery quality</li>
+        <li>Implemented process improvements that enhanced team efficiency, collaboration, and project delivery quality</li>
+        <li>Managed full-cycle physiological data collection, curation, logistics, and inventory tracking for ML model training and pre-clinical and clinical studies — including coordinating shipments and ensuring product availability</li>
+        <li>Partnered with clinical development engineers to define experimental designs, establish study requirements, and provide technical support for pre-clinical studies in both GLP and non-GLP settings</li>
       </ul>
     </div>
   </div>
@@ -402,7 +406,7 @@ footer{padding:28px 6%;display:flex;justify-content:space-between;align-items:ce
   <p class="sec-sub">Open to V&amp;V Engineer, QA Lead, and Technical PM roles. Reach out anytime.</p>
   <div class="contact-wrap">
     <div class="c-items">
-      <div class="c-row fade"><div class="c-icon">📧</div><div><div class="c-label">Email</div><div class="c-val"><a href="mailto:chensi.xu@yahoo.com">chensi.xu@yahoo.com</a></div></div></div>
+      <div class="c-row fade"><div class="c-icon">📧</div><div><div class="c-label">Email</div><div class="c-val"><a href="/cdn-cgi/l/email-protection#bad9d2dfd4c9d394c2cffac3dbd2d5d594d9d5d7"><span class="__cf_email__" data-cfemail="27444f4249544e095f52675e464f48480944484a">[email&#160;protected]</span></a></div></div></div>
       <div class="c-row fade"><div class="c-icon">📍</div><div><div class="c-label">Location</div><div class="c-val">San Jose, CA</div></div></div>
       <div class="c-row fade"><div class="c-icon">💼</div><div><div class="c-label">LinkedIn</div><div class="c-val"><a href="https://linkedin.com/in/chensixu" target="_blank">linkedin.com/in/chensixu</a></div></div></div>
       <div class="c-row fade"><div class="c-icon">⚡</div><div><div class="c-label">Response time</div><div class="c-val">Within 24 hours</div></div></div>
@@ -426,7 +430,7 @@ footer{padding:28px 6%;display:flex;justify-content:space-between;align-items:ce
   <div class="footer-copy">© 2026 · San Jose, CA</div>
 </footer>
 
-<script>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
 const io = new IntersectionObserver(entries => {
   entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
 }, { threshold: 0.1 });
@@ -440,19 +444,4 @@ async function handleSubmit(e) {
     const res = await fetch('https://formspree.io/f/mbdzwpep', {
       method: 'POST',
       body: new FormData(e.target),
-      headers: { 'Accept': 'application/json' }
-    });
-    if (res.ok) {
-      document.getElementById('formOk').style.display = 'block';
-      btn.style.display = 'none';
-      e.target.reset();
-    } else {
-      btn.textContent = 'Try again'; btn.disabled = false;
-    }
-  } catch(err) {
-    btn.textContent = 'Try again'; btn.disabled = false;
-  }
-}
-</script>
-</body>
-</html>
+   
