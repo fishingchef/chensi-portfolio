@@ -134,8 +134,10 @@ footer{padding:28px 6%;display:flex;justify-content:space-between;align-items:ce
 .fade.animate:nth-child(2){transition-delay:0.08s}
 .fade.animate:nth-child(3){transition-delay:0.16s}
 .fade.animate:nth-child(4){transition-delay:0.24s}
-.exp-item{display:grid;grid-template-columns:200px 1fr;gap:48px;padding:40px 0;border-top:1px solid var(--border)}
-.proj-card{border:1px solid var(--border);border-radius:10px;padding:30px;background:var(--white);transition:border-color 0.2s,box-shadow 0.2s}
+.exp-item{display:grid;grid-template-columns:200px 1fr;gap:48px;padding:40px 0;border-top:1px solid var(--border);opacity:0;transform:translateY(20px);transition:all 0.55s ease}
+.exp-item.visible{opacity:1;transform:translateY(0)}
+.proj-card{border:1px solid var(--border);border-radius:10px;padding:30px;background:var(--white);opacity:0;transform:translateY(16px);transition:opacity 0.5s,transform 0.5s,border-color 0.2s,box-shadow 0.2s}
+.proj-card.visible{opacity:1;transform:translateY(0)}
 .proj-card:hover{border-color:var(--blue);box-shadow:0 4px 20px rgba(58,95,138,0.1)}
 @media(max-width:860px){
   #hero{grid-template-columns:1fr}
@@ -438,7 +440,10 @@ footer{padding:28px 6%;display:flex;justify-content:space-between;align-items:ce
 const io = new IntersectionObserver(entries => {
   entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
 }, { threshold: 0.1 });
-document.querySelectorAll('.fade, .exp-item, .proj-card').forEach(el => io.observe(el));
+document.querySelectorAll('.fade, .exp-item, .proj-card').forEach(el => {
+  el.classList.add('animate');
+  io.observe(el);
+});
 
 async function handleSubmit(e) {
   e.preventDefault();
@@ -448,3 +453,4 @@ async function handleSubmit(e) {
     const res = await fetch('https://formspree.io/f/mbdzwpep', {
       method: 'POST',
       body: new FormData(e.target),
+   
