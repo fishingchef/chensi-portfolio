@@ -8,22 +8,21 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&display=swap" rel="stylesheet">
 <style>
-:root {
-  --blue:#3a5f8a;--blue-dark:#1e3a5f;--blue-light:#5a82b0;
-  --blue-pale:#eef3f9;--blue-mid:#d0dff0;--white:#ffffff;
-  --off-white:#f8fafd;--text:#1a2533;--muted:#5a6e84;
-  --border:#dce6f0;--radius:6px;
-}
+:root{--blue:#3a5f8a;--blue-dark:#1e3a5f;--blue-light:#5a82b0;--blue-pale:#eef3f9;--blue-mid:#d0dff0;--white:#ffffff;--off-white:#f8fafd;--text:#1a2533;--muted:#5a6e84;--border:#dce6f0;--radius:6px}
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
 body{font-family:'DM Sans',sans-serif;background:var(--white);color:var(--text);line-height:1.6;overflow-x:hidden}
+
+/* NAV */
 nav{position:sticky;top:0;z-index:200;background:rgba(255,255,255,0.95);backdrop-filter:blur(10px);border-bottom:1px solid var(--border);padding:0 6%;height:64px;display:flex;align-items:center;justify-content:space-between}
 .nav-name{font-family:'DM Serif Display',serif;font-size:18px;color:var(--blue-dark)}
 .nav-links{display:flex;gap:32px;list-style:none}
 .nav-links a{font-size:13px;font-weight:500;color:var(--muted);text-decoration:none;transition:color 0.2s}
 .nav-links a:hover{color:var(--blue)}
-.nav-cta{background:var(--blue);color:white;padding:9px 20px;border-radius:var(--radius);font-size:13px;font-weight:600;text-decoration:none;transition:background 0.2s}
+.nav-cta{background:var(--blue);color:white;padding:9px 20px;border-radius:var(--radius);font-size:13px;font-weight:600;text-decoration:none}
 .nav-cta:hover{background:var(--blue-dark)}
+
+/* HERO */
 #hero{padding:96px 6% 80px;display:grid;grid-template-columns:1fr 400px;gap:80px;align-items:center;border-bottom:1px solid var(--border)}
 .eyebrow-line{display:inline-flex;align-items:center;gap:10px;font-size:12px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;color:var(--blue);margin-bottom:20px}
 .eyebrow-line::before{content:'';width:20px;height:2px;background:var(--blue);display:block}
@@ -43,6 +42,8 @@ h1 em{font-style:italic;color:var(--blue)}
 .stat-l{font-size:12px;color:var(--muted);margin-top:5px;font-weight:500}
 .tags{display:flex;flex-wrap:wrap;gap:8px;padding-top:24px;border-top:1px solid var(--border)}
 .tag{background:var(--blue-pale);color:var(--blue);padding:5px 12px;border-radius:100px;font-size:12px;font-weight:500}
+
+/* SECTIONS */
 section{padding:80px 6%;border-bottom:1px solid var(--border)}
 .alt{background:var(--off-white)}
 .dark{background:var(--blue-dark)}
@@ -56,6 +57,8 @@ h2 em{font-style:italic;color:var(--blue)}
 .dark h2 em{color:var(--blue-mid)}
 .sec-sub{font-size:16px;font-weight:300;color:var(--muted);max-width:500px;line-height:1.7;margin-bottom:52px}
 .dark .sec-sub{color:rgba(255,255,255,0.5)}
+
+/* ABOUT */
 .two-col{display:grid;grid-template-columns:1fr 1fr;gap:72px;align-items:start}
 .about-text p{font-size:16px;line-height:1.9;color:var(--muted);font-weight:300;margin-bottom:16px}
 .about-text p strong{color:var(--text);font-weight:600}
@@ -66,8 +69,9 @@ h2 em{font-style:italic;color:var(--blue)}
 .info-v a{color:var(--blue);text-decoration:none}
 .info-v a:hover{text-decoration:underline}
 .badge{background:#e6f4ea;color:#2d7d46;padding:3px 10px;border-radius:100px;font-size:12px;font-weight:600}
-.exp-item{display:grid;grid-template-columns:200px 1fr;gap:48px;padding:40px 0;border-top:1px solid var(--border);opacity:0;transform:translateY(20px);transition:all 0.55s ease}
-.exp-item.visible{opacity:1;transform:translateY(0)}
+
+/* EXPERIENCE */
+.exp-item{display:grid;grid-template-columns:200px 1fr;gap:48px;padding:40px 0;border-top:1px solid var(--border)}
 .exp-co{font-size:13px;font-weight:600;color:var(--blue);margin-bottom:4px}
 .exp-dates{font-size:13px;color:var(--muted);font-weight:300}
 .exp-role{font-family:'DM Serif Display',serif;font-size:22px;color:var(--blue-dark);margin-bottom:16px}
@@ -75,18 +79,23 @@ h2 em{font-style:italic;color:var(--blue)}
 .exp-list li{font-size:15px;color:var(--muted);font-weight:300;line-height:1.65;padding:7px 0 7px 20px;border-bottom:1px solid var(--border);position:relative}
 .exp-list li:last-child{border-bottom:none}
 .exp-list li::before{content:'–';position:absolute;left:0;color:var(--blue-light)}
+
+/* SKILLS */
 .skills-wrap{display:grid;grid-template-columns:repeat(3,1fr);gap:2px;background:var(--border);border:1px solid var(--border);border-radius:10px;overflow:hidden}
 .skill-group{background:var(--off-white);padding:32px}
 .sg-title{font-size:11px;font-weight:600;letter-spacing:2px;text-transform:uppercase;color:var(--blue);margin-bottom:20px}
 .sk{font-size:14px;color:var(--muted);font-weight:300;padding:8px 0;border-bottom:1px solid var(--border)}
 .sk:last-child{border-bottom:none}
+
+/* PROJECTS */
 .proj-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px}
-.proj-card{border:1px solid var(--border);border-radius:10px;padding:30px;background:var(--white);opacity:0;transform:translateY(16px);transition:opacity 0.5s,transform 0.5s,border-color 0.2s,box-shadow 0.2s}
-.proj-card.visible{opacity:1;transform:translateY(0)}
+.proj-card{border:1px solid var(--border);border-radius:10px;padding:30px;background:var(--white);transition:border-color 0.2s,box-shadow 0.2s}
 .proj-card:hover{border-color:var(--blue);box-shadow:0 4px 20px rgba(58,95,138,0.1)}
 .proj-tag{font-size:11px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;color:var(--blue);margin-bottom:10px}
 .proj-title{font-family:'DM Serif Display',serif;font-size:19px;color:var(--blue-dark);margin-bottom:10px}
 .proj-desc{font-size:14px;color:var(--muted);line-height:1.7;font-weight:300}
+
+/* EDUCATION */
 .edu-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px}
 .edu-card{border:1px solid var(--border);border-radius:10px;padding:28px;background:var(--white)}
 .edu-type{font-size:11px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;color:var(--blue);margin-bottom:8px}
@@ -97,6 +106,8 @@ h2 em{font-style:italic;color:var(--blue)}
 .cred-icon{width:38px;height:38px;border-radius:8px;background:var(--blue-pale);display:flex;align-items:center;justify-content:center;font-size:17px;flex-shrink:0}
 .cred-name{font-size:14px;font-weight:600;color:var(--text)}
 .cred-sub{font-size:13px;color:var(--muted);font-weight:300}
+
+/* TESTIMONIALS */
 .t-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px}
 .t-card{background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:10px;padding:32px}
 .t-text{font-size:15px;color:rgba(255,255,255,0.65);line-height:1.8;font-style:italic;font-weight:300;margin-bottom:24px}
@@ -106,6 +117,8 @@ h2 em{font-style:italic;color:var(--blue)}
 .t-role{font-size:12px;color:rgba(255,255,255,0.4);font-weight:300}
 .t-note{text-align:center;margin-top:36px;font-size:14px;color:rgba(255,255,255,0.35)}
 .t-note a{color:var(--blue-mid);text-decoration:none}
+
+/* CONTACT */
 .contact-wrap{display:grid;grid-template-columns:1fr 1fr;gap:80px}
 .c-items{display:flex;flex-direction:column;gap:22px}
 .c-row{display:flex;gap:14px;align-items:flex-start}
@@ -125,20 +138,13 @@ h2 em{font-style:italic;color:var(--blue)}
 .f-btn{background:var(--blue);color:white;border:none;border-radius:var(--radius);padding:14px 28px;font-family:'DM Sans',sans-serif;font-size:14px;font-weight:600;cursor:pointer;align-self:flex-start;transition:background 0.2s}
 .f-btn:hover{background:var(--blue-dark)}
 .f-ok{display:none;background:#e6f4ea;border:1px solid #a8d5b5;border-radius:var(--radius);padding:14px;color:#2d7d46;font-size:14px;text-align:center}
+
+/* FOOTER */
 footer{padding:28px 6%;display:flex;justify-content:space-between;align-items:center;border-top:1px solid var(--border)}
 .footer-name{font-family:'DM Serif Display',serif;font-size:16px;color:var(--muted)}
 .footer-copy{font-size:13px;color:#c0ccd8}
-.fade{opacity:1;transform:translateY(0)}
-.fade.animate{opacity:0;transform:translateY(20px);transition:opacity 0.6s ease,transform 0.6s ease}
-.fade.animate.visible{opacity:1;transform:translateY(0)}
-.fade.animate:nth-child(2){transition-delay:0.08s}
-.fade.animate:nth-child(3){transition-delay:0.16s}
-.fade.animate:nth-child(4){transition-delay:0.24s}
-.exp-item{display:grid;grid-template-columns:200px 1fr;gap:48px;padding:40px 0;border-top:1px solid var(--border);opacity:0;transform:translateY(20px);transition:all 0.55s ease}
-.exp-item.visible{opacity:1;transform:translateY(0)}
-.proj-card{border:1px solid var(--border);border-radius:10px;padding:30px;background:var(--white);opacity:0;transform:translateY(16px);transition:opacity 0.5s,transform 0.5s,border-color 0.2s,box-shadow 0.2s}
-.proj-card.visible{opacity:1;transform:translateY(0)}
-.proj-card:hover{border-color:var(--blue);box-shadow:0 4px 20px rgba(58,95,138,0.1)}
+
+/* RESPONSIVE */
 @media(max-width:860px){
   #hero{grid-template-columns:1fr}
   .hero-card{display:none}
@@ -177,7 +183,7 @@ footer{padding:28px 6%;display:flex;justify-content:space-between;align-items:ce
       <a href="#experience" class="btn btn-ghost">View experience</a>
     </div>
   </div>
-  <div class="hero-card fade">
+  <div class="hero-card">
     <div class="card-label">Quick profile</div>
     <div class="stat-grid">
       <div><div class="stat-n">6+</div><div class="stat-l">Years in MedTech</div></div>
@@ -199,15 +205,15 @@ footer{padding:28px 6%;display:flex;justify-content:space-between;align-items:ce
 <section id="about" class="alt">
   <div class="eyebrow">About</div>
   <div class="two-col">
-    <div class="about-text fade">
+    <div class="about-text">
       <h2>Bridging quality<br><em>and delivery</em></h2>
       <p>I'm a Verification &amp; Validation Engineer and Technical Project Manager with 6+ years in MedTech and mobile applications. I started in project management — leading Android, iOS, and IoT programs at BioIntelliSense — before moving into a V&amp;V role where I designed and executed test plans for the same kinds of products I'd previously shipped.</p>
       <p>That dual background gives me a real edge: I understand <strong>how products are built</strong> and <strong>what it takes to validate them properly</strong>. I'm comfortable across engineering, product, and QA teams, and experienced coordinating both onshore and offshore collaborators.</p>
       <p>Currently open to opportunities in <strong>V&amp;V Engineering, QA Leadership, or Technical Project Management</strong> — especially in MedTech, digital health, or mobile.</p>
     </div>
-    <div class="fade">
+    <div>
       <div class="info-row"><span class="info-k">Location</span><span class="info-v">San Jose, CA</span></div>
-      <div class="info-row"><span class="info-k">Email</span><span class="info-v"><a href="/cdn-cgi/l/email-protection#ceada6aba0bda7e0b6bb8eb7afa6a1a1e0ada1a3"><span class="__cf_email__" data-cfemail="1f7c777a716c7631676a5f667e777070317c7072">[email&#160;protected]</span></a></span></div>
+      <div class="info-row"><span class="info-k">Email</span><span class="info-v"><a href="mailto:chensi.xu@yahoo.com">chensi.xu@yahoo.com</a></span></div>
       <div class="info-row"><span class="info-k">LinkedIn</span><span class="info-v"><a href="https://linkedin.com/in/chensixu" target="_blank">linkedin.com/in/chensixu</a></span></div>
       <div class="info-row"><span class="info-k">Focus</span><span class="info-v">V&V · QA · Technical PM</span></div>
       <div class="info-row"><span class="info-k">Industries</span><span class="info-v">MedTech · Mobile · IoT</span></div>
@@ -221,8 +227,12 @@ footer{padding:28px 6%;display:flex;justify-content:space-between;align-items:ce
   <div class="eyebrow">Experience</div>
   <h2>Career <em>history</em></h2>
   <p class="sec-sub">6+ years across V&amp;V engineering, technical project management, and cross-functional delivery in regulated environments.</p>
+
   <div class="exp-item">
-    <div><div class="exp-co">BioIntelliSense, Inc.</div><div class="exp-dates">Oct 2022 – Mar 2026</div></div>
+    <div>
+      <div class="exp-co">BioIntelliSense, Inc.</div>
+      <div class="exp-dates">Oct 2022 – Mar 2026</div>
+    </div>
     <div>
       <div class="exp-role">Verification &amp; Validation Engineer</div>
       <ul class="exp-list">
@@ -238,8 +248,12 @@ footer{padding:28px 6%;display:flex;justify-content:space-between;align-items:ce
       </ul>
     </div>
   </div>
+
   <div class="exp-item">
-    <div><div class="exp-co">BioIntelliSense, Inc.</div><div class="exp-dates">Oct 2019 – Sep 2022</div></div>
+    <div>
+      <div class="exp-co">BioIntelliSense, Inc.</div>
+      <div class="exp-dates">Oct 2019 – Sep 2022</div>
+    </div>
     <div>
       <div class="exp-role">Project Manager — Mobile &amp; Device Programs</div>
       <ul class="exp-list">
@@ -252,8 +266,12 @@ footer{padding:28px 6%;display:flex;justify-content:space-between;align-items:ce
       </ul>
     </div>
   </div>
+
   <div class="exp-item">
-    <div><div class="exp-co">Striiv Inc.</div><div class="exp-dates">Jun 2015 – Oct 2017</div></div>
+    <div>
+      <div class="exp-co">Striiv Inc.</div>
+      <div class="exp-dates">Jun 2015 – Oct 2017</div>
+    </div>
     <div>
       <div class="exp-role">Project Manager</div>
       <ul class="exp-list">
@@ -264,8 +282,12 @@ footer{padding:28px 6%;display:flex;justify-content:space-between;align-items:ce
       </ul>
     </div>
   </div>
+
   <div class="exp-item">
-    <div><div class="exp-co">PlayNext</div><div class="exp-dates">Sep 2014 – Apr 2015</div></div>
+    <div>
+      <div class="exp-co">PlayNext</div>
+      <div class="exp-dates">Sep 2014 – Apr 2015</div>
+    </div>
     <div>
       <div class="exp-role">Art Coordinator</div>
       <ul class="exp-list">
@@ -282,7 +304,7 @@ footer{padding:28px 6%;display:flex;justify-content:space-between;align-items:ce
   <h2>Core <em>competencies</em></h2>
   <p class="sec-sub">Technical depth in V&amp;V and mobile QA paired with hands-on project leadership across the full product lifecycle.</p>
   <div class="skills-wrap">
-    <div class="skill-group fade">
+    <div class="skill-group">
       <div class="sg-title">Verification &amp; Validation</div>
       <div class="sk">Medical Device Software Validation</div>
       <div class="sk">V&amp;V Test Plan Development</div>
@@ -291,7 +313,7 @@ footer{padding:28px 6%;display:flex;justify-content:space-between;align-items:ce
       <div class="sk">Regulatory Compliance (FDA/SaMD)</div>
       <div class="sk">Defect Tracking &amp; Traceability</div>
     </div>
-    <div class="skill-group fade">
+    <div class="skill-group">
       <div class="sg-title">Mobile &amp; QA</div>
       <div class="sk">iOS &amp; Android App Testing</div>
       <div class="sk">Compatibility Testing</div>
@@ -300,7 +322,7 @@ footer{padding:28px 6%;display:flex;justify-content:space-between;align-items:ce
       <div class="sk">Release Validation</div>
       <div class="sk">Test Coverage Analysis</div>
     </div>
-    <div class="skill-group fade">
+    <div class="skill-group">
       <div class="sg-title">Project Management</div>
       <div class="sk">Technical Project Management</div>
       <div class="sk">Agile / Scrum</div>
@@ -317,32 +339,32 @@ footer{padding:28px 6%;display:flex;justify-content:space-between;align-items:ce
   <h2>Selected <em>projects</em></h2>
   <p class="sec-sub">Key programs across connected medical devices, mobile applications, and data infrastructure.</p>
   <div class="proj-grid">
-    <div class="proj-card fade">
+    <div class="proj-card">
       <div class="proj-tag">MedTech · V&amp;V</div>
       <div class="proj-title">Connected Medical Device Validation</div>
       <div class="proj-desc">End-to-end V&amp;V for BioIntelliSense's connected medical device platform — mobile apps, firmware, and gateway hardware across multiple regulatory releases.</div>
     </div>
-    <div class="proj-card fade">
+    <div class="proj-card">
       <div class="proj-tag">IoT · Program Management</div>
       <div class="proj-title">BioHub Wi-Fi Gateway Program</div>
       <div class="proj-desc">Directed the BioHub Wi-Fi gateway from concept through production — scope, cross-functional timelines, vendor coordination, and stakeholder communication.</div>
     </div>
-    <div class="proj-card fade">
+    <div class="proj-card">
       <div class="proj-tag">Data · ML</div>
       <div class="proj-title">Physiological Data Pipeline for ML</div>
       <div class="proj-desc">Managed full-cycle physiological data collection, annotation, and quality control for ML model training in collaboration with data science teams.</div>
     </div>
-    <div class="proj-card fade">
+    <div class="proj-card">
       <div class="proj-tag">Mobile · Beta Testing</div>
       <div class="proj-title">Internal Beta &amp; Dogfooding Programs</div>
       <div class="proj-desc">Structured beta programs for multiple simultaneous firmware and mobile releases — coordinating test devices, participant feedback, and release readiness.</div>
     </div>
-    <div class="proj-card fade">
+    <div class="proj-card">
       <div class="proj-tag">Mobile · iOS &amp; Android</div>
       <div class="proj-title">Striiv Consumer Mobile Apps</div>
       <div class="proj-desc">Delivered Striiv Mainline Apps, Pfizer Believe App, and CHR1 — coordinating onshore and offshore teams through planning, execution, and release.</div>
     </div>
-    <div class="proj-card fade">
+    <div class="proj-card">
       <div class="proj-tag">Gaming · Asset Coordination</div>
       <div class="proj-title">Marvel &amp; Ubisoft Art Production</div>
       <div class="proj-desc">Coordinated art for Xmen Battle of the Atom and Assassin's Creed: Memories — managing Marvel licensing, overseas studios, achieving 100% on-time delivery.</div>
@@ -355,29 +377,35 @@ footer{padding:28px 6%;display:flex;justify-content:space-between;align-items:ce
   <h2>Academic <em>background</em></h2>
   <p class="sec-sub">Formal education in informatics and Chinese studies, with professional certification in project tooling.</p>
   <div class="edu-grid">
-    <div class="edu-card fade">
+    <div class="edu-card">
       <div class="edu-type">Graduate</div>
       <div class="edu-deg">M.S. Informatics</div>
       <div class="edu-school">San Jose State University · 2022–2023</div>
     </div>
-    <div class="edu-card fade">
+    <div class="edu-card">
       <div class="edu-type">Undergraduate</div>
       <div class="edu-deg">B.A. Chinese Studies</div>
       <div class="edu-school">University of California, Los Angeles · Film Minor · 2011–2013</div>
     </div>
-    <div class="edu-card fade">
+    <div class="edu-card">
       <div class="edu-type">Associate Degree</div>
       <div class="edu-deg">A.A. Liberal Arts</div>
       <div class="edu-school">De Anza College · Social &amp; Behavioral Science · 2007–2011</div>
     </div>
-    <div class="edu-card fade">
+    <div class="edu-card">
       <div class="cred-row">
         <div class="cred-icon">🏅</div>
-        <div><div class="cred-name">Installing &amp; Administering Atlassian JIRA</div><div class="cred-sub">Professional Certification · Atlassian</div></div>
+        <div>
+          <div class="cred-name">Installing &amp; Administering Atlassian JIRA</div>
+          <div class="cred-sub">Professional Certification · Atlassian</div>
+        </div>
       </div>
       <div class="cred-row">
         <div class="cred-icon">🌐</div>
-        <div><div class="cred-name">Trilingual</div><div class="cred-sub">English · Mandarin Chinese · Hokkien</div></div>
+        <div>
+          <div class="cred-name">Trilingual</div>
+          <div class="cred-sub">English · Mandarin Chinese · Hokkien</div>
+        </div>
       </div>
     </div>
   </div>
@@ -388,18 +416,24 @@ footer{padding:28px 6%;display:flex;justify-content:space-between;align-items:ce
   <h2>What colleagues <em>say</em></h2>
   <p class="sec-sub">Replace these placeholders with real quotes from LinkedIn recommendations.</p>
   <div class="t-grid">
-    <div class="t-card fade">
+    <div class="t-card">
       <p class="t-text">"Chensi's V&amp;V work is exceptionally thorough. Her ability to design comprehensive test plans while staying aligned with regulatory requirements made her invaluable to our team."</p>
       <div class="t-author">
         <div class="t-av">A</div>
-        <div><div class="t-name">Colleague Name</div><div class="t-role">Title · Company</div></div>
+        <div>
+          <div class="t-name">Colleague Name</div>
+          <div class="t-role">Title · Company</div>
+        </div>
       </div>
     </div>
-    <div class="t-card fade">
+    <div class="t-card">
       <p class="t-text">"As a project manager, Chensi kept complex cross-functional programs on track. Her communication across onshore and offshore teams was always clear and outcome-focused."</p>
       <div class="t-author">
         <div class="t-av">B</div>
-        <div><div class="t-name">Colleague Name</div><div class="t-role">Title · Company</div></div>
+        <div>
+          <div class="t-name">Colleague Name</div>
+          <div class="t-role">Title · Company</div>
+        </div>
       </div>
     </div>
   </div>
@@ -412,45 +446,82 @@ footer{padding:28px 6%;display:flex;justify-content:space-between;align-items:ce
   <p class="sec-sub">Open to V&amp;V Engineer, QA Lead, and Technical PM roles. Reach out anytime.</p>
   <div class="contact-wrap">
     <div class="c-items">
-      <div class="c-row fade"><div class="c-icon">📧</div><div><div class="c-label">Email</div><div class="c-val"><a href="/cdn-cgi/l/email-protection#bad9d2dfd4c9d394c2cffac3dbd2d5d594d9d5d7"><span class="__cf_email__" data-cfemail="27444f4249544e095f52675e464f48480944484a">[email&#160;protected]</span></a></div></div></div>
-      <div class="c-row fade"><div class="c-icon">📍</div><div><div class="c-label">Location</div><div class="c-val">San Jose, CA</div></div></div>
-      <div class="c-row fade"><div class="c-icon">💼</div><div><div class="c-label">LinkedIn</div><div class="c-val"><a href="https://linkedin.com/in/chensixu" target="_blank">linkedin.com/in/chensixu</a></div></div></div>
-      <div class="c-row fade"><div class="c-icon">⚡</div><div><div class="c-label">Response time</div><div class="c-val">Within 24 hours</div></div></div>
+      <div class="c-row">
+        <div class="c-icon">📧</div>
+        <div><div class="c-label">Email</div><div class="c-val"><a href="mailto:chensi.xu@yahoo.com">chensi.xu@yahoo.com</a></div></div>
+      </div>
+      <div class="c-row">
+        <div class="c-icon">📍</div>
+        <div><div class="c-label">Location</div><div class="c-val">San Jose, CA</div></div>
+      </div>
+      <div class="c-row">
+        <div class="c-icon">💼</div>
+        <div><div class="c-label">LinkedIn</div><div class="c-val"><a href="https://linkedin.com/in/chensixu" target="_blank">linkedin.com/in/chensixu</a></div></div>
+      </div>
+      <div class="c-row">
+        <div class="c-icon">⚡</div>
+        <div><div class="c-label">Response time</div><div class="c-val">Within 24 hours</div></div>
+      </div>
     </div>
     <form class="c-form" onsubmit="handleSubmit(event)">
       <div class="f-row">
-        <div class="f-group"><label class="f-label">Name</label><input class="f-input" type="text" name="name" placeholder="Your name" required></div>
-        <div class="f-group"><label class="f-label">Company</label><input class="f-input" type="text" name="company" placeholder="Your company"></div>
+        <div class="f-group">
+          <label class="f-label">Name</label>
+          <input class="f-input" type="text" name="name" placeholder="Your name" required>
+        </div>
+        <div class="f-group">
+          <label class="f-label">Company</label>
+          <input class="f-input" type="text" name="company" placeholder="Your company">
+        </div>
       </div>
-      <div class="f-group"><label class="f-label">Email</label><input class="f-input" type="email" name="email" placeholder="your@email.com" required></div>
-      <div class="f-group"><label class="f-label">Role / Opportunity</label><input class="f-input" type="text" name="role" placeholder="e.g. V&amp;V Engineer, QA Lead, PM..."></div>
-      <div class="f-group"><label class="f-label">Message</label><textarea class="f-ta" name="message" placeholder="Tell me about the opportunity..." required></textarea></div>
+      <div class="f-group">
+        <label class="f-label">Email</label>
+        <input class="f-input" type="email" name="email" placeholder="your@email.com" required>
+      </div>
+      <div class="f-group">
+        <label class="f-label">Role / Opportunity</label>
+        <input class="f-input" type="text" name="role" placeholder="e.g. V&amp;V Engineer, QA Lead, PM...">
+      </div>
+      <div class="f-group">
+        <label class="f-label">Message</label>
+        <textarea class="f-ta" name="message" placeholder="Tell me about the opportunity..." required></textarea>
+      </div>
       <button type="submit" class="f-btn">Send message</button>
-      <div class="f-ok" id="formOk">✓ Sent! I'll be in touch within 24 hours.</div>
+      <div class="f-ok" id="formOk">Sent! I will be in touch within 24 hours.</div>
     </form>
   </div>
 </section>
 
 <footer>
   <div class="footer-name">Chensi Xu</div>
-  <div class="footer-copy">© 2026 · San Jose, CA</div>
+  <div class="footer-copy">2026 · San Jose, CA</div>
 </footer>
 
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
-const io = new IntersectionObserver(entries => {
-  entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
-}, { threshold: 0.1 });
-document.querySelectorAll('.fade, .exp-item, .proj-card').forEach(el => {
-  el.classList.add('animate');
-  io.observe(el);
-});
-
+<script>
 async function handleSubmit(e) {
   e.preventDefault();
-  const btn = e.target.querySelector('.f-btn');
-  btn.textContent = 'Sending...'; btn.disabled = true;
+  var btn = e.target.querySelector('.f-btn');
+  btn.textContent = 'Sending...';
+  btn.disabled = true;
   try {
-    const res = await fetch('https://formspree.io/f/mbdzwpep', {
+    var res = await fetch('https://formspree.io/f/mbdzwpep', {
       method: 'POST',
       body: new FormData(e.target),
-   
+      headers: { 'Accept': 'application/json' }
+    });
+    if (res.ok) {
+      document.getElementById('formOk').style.display = 'block';
+      btn.style.display = 'none';
+      e.target.reset();
+    } else {
+      btn.textContent = 'Try again';
+      btn.disabled = false;
+    }
+  } catch(err) {
+    btn.textContent = 'Try again';
+    btn.disabled = false;
+  }
+}
+</script>
+</body>
+</html>
