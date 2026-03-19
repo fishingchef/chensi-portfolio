@@ -257,7 +257,7 @@
     <div class="fade">
       <div class="info-table">
         <div class="info-row"><span class="info-k">Location</span><span class="info-v">San Jose, CA</span></div>
-        <div class="info-row"><span class="info-k">Email</span><span class="info-v"><a href="mailto:chensi.xu@yahoo.com">chensi.xu@yahoo.com</a></span></div>
+        <div class="info-row"><span class="info-k">Email</span><span class="info-v"><a href="/cdn-cgi/l/email-protection#25464d404b564c0b5d50655c444d4a4a0b464a48"><span class="__cf_email__" data-cfemail="26454e4348554f085e53665f474e49490845494b">[email&#160;protected]</span></a></span></div>
         <div class="info-row"><span class="info-k">LinkedIn</span><span class="info-v"><a href="https://linkedin.com/in/chensixu" target="_blank">linkedin.com/in/chensixu</a></span></div>
         <div class="info-row"><span class="info-k">Focus</span><span class="info-v">V&V · QA · Technical PM</span></div>
         <div class="info-row"><span class="info-k">Industries</span><span class="info-v">MedTech · Mobile · IoT</span></div>
@@ -469,19 +469,19 @@
   <p class="sec-sub">Open to V&V Engineer, QA Lead, and Technical PM roles. Reach out anytime.</p>
   <div class="contact-wrap">
     <div class="c-items">
-      <div class="c-row fade"><div class="c-icon">📧</div><div><div class="c-label">Email</div><div class="c-val"><a href="mailto:chensi.xu@yahoo.com">chensi.xu@yahoo.com</a></div></div></div>
+      <div class="c-row fade"><div class="c-icon">📧</div><div><div class="c-label">Email</div><div class="c-val"><a href="/cdn-cgi/l/email-protection#fa99929f948993d4828fba839b929595d4999597"><span class="__cf_email__" data-cfemail="06656e6368756f287e73467f676e69692865696b">[email&#160;protected]</span></a></div></div></div>
       <div class="c-row fade"><div class="c-icon">📍</div><div><div class="c-label">Location</div><div class="c-val">San Jose, CA</div></div></div>
       <div class="c-row fade"><div class="c-icon">💼</div><div><div class="c-label">LinkedIn</div><div class="c-val"><a href="https://linkedin.com/in/chensixu" target="_blank">linkedin.com/in/chensixu</a></div></div></div>
       <div class="c-row fade"><div class="c-icon">⚡</div><div><div class="c-label">Response time</div><div class="c-val">Within 24 hours</div></div></div>
     </div>
-    <form class="c-form" onsubmit="handleSubmit(event)">
+    <form class="c-form" onsubmit="handleSubmit(event)" action="https://formspree.io/f/mbdzwpep" method="POST">
       <div class="f-row">
-        <div class="f-group"><label class="f-label">Name</label><input class="f-input" type="text" placeholder="Your name" required></div>
-        <div class="f-group"><label class="f-label">Company</label><input class="f-input" type="text" placeholder="Your company"></div>
+        <div class="f-group"><label class="f-label">Name</label><input class="f-input" type="text" placeholder="Your name" name="name" required></div>
+        <div class="f-group"><label class="f-label">Company</label><input class="f-input" type="text" placeholder="Your company" name="company"></div>
       </div>
-      <div class="f-group"><label class="f-label">Email</label><input class="f-input" type="email" placeholder="your@email.com" required></div>
-      <div class="f-group"><label class="f-label">Role / Opportunity</label><input class="f-input" type="text" placeholder="e.g. V&V Engineer, QA Lead, PM..."></div>
-      <div class="f-group"><label class="f-label">Message</label><textarea class="f-ta" placeholder="Tell me about the opportunity..." required></textarea></div>
+      <div class="f-group"><label class="f-label">Email</label><input class="f-input" type="email" placeholder="your@email.com" name="email" required></div>
+      <div class="f-group"><label class="f-label">Role / Opportunity</label><input class="f-input" type="text" placeholder="e.g. V&V Engineer, QA Lead, PM..." name="role"></div>
+      <div class="f-group"><label class="f-label">Message</label><textarea class="f-ta" placeholder="Tell me about the opportunity..." name="message" required></textarea></div>
       <button type="submit" class="f-btn">Send message →</button>
       <div class="f-ok" id="formOk">✓ Sent! I'll be in touch within 24 hours.</div>
     </form>
@@ -493,22 +493,8 @@
   <div class="footer-copy">© 2026 · San Jose, CA</div>
 </footer>
 
-<script>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
   const io = new IntersectionObserver(entries => {
     entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
   }, { threshold: 0.1 });
-  document.querySelectorAll('.fade, .exp-item, .proj-card').forEach(el => io.observe(el));
-
-  function handleSubmit(e) {
-    e.preventDefault();
-    const btn = e.target.querySelector('.f-btn');
-    btn.textContent = 'Sending…'; btn.disabled = true;
-    setTimeout(() => {
-      document.getElementById('formOk').style.display = 'block';
-      btn.style.display = 'none';
-      e.target.reset();
-    }, 900);
-  }
-</script>
-</body>
-</html>
+  document.querySelectorAll('.fade, .exp-item, .proj-card').for
