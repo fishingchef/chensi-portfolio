@@ -12,8 +12,6 @@
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
 body{font-family:'DM Sans',sans-serif;background:var(--white);color:var(--text);line-height:1.6;overflow-x:hidden}
-
-/* NAV */
 nav{position:sticky;top:0;z-index:200;background:rgba(255,255,255,0.95);backdrop-filter:blur(10px);border-bottom:1px solid var(--border);padding:0 6%;height:64px;display:flex;align-items:center;justify-content:space-between}
 .nav-name{font-family:'DM Serif Display',serif;font-size:18px;color:var(--blue-dark)}
 .nav-links{display:flex;gap:32px;list-style:none}
@@ -21,8 +19,6 @@ nav{position:sticky;top:0;z-index:200;background:rgba(255,255,255,0.95);backdrop
 .nav-links a:hover{color:var(--blue)}
 .nav-cta{background:var(--blue);color:white;padding:9px 20px;border-radius:var(--radius);font-size:13px;font-weight:600;text-decoration:none}
 .nav-cta:hover{background:var(--blue-dark)}
-
-/* HERO */
 #hero{padding:96px 6% 80px;display:grid;grid-template-columns:1fr 400px;gap:80px;align-items:center;border-bottom:1px solid var(--border)}
 .eyebrow-line{display:inline-flex;align-items:center;gap:10px;font-size:12px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;color:var(--blue);margin-bottom:20px}
 .eyebrow-line::before{content:'';width:20px;height:2px;background:var(--blue);display:block}
@@ -42,8 +38,6 @@ h1 em{font-style:italic;color:var(--blue)}
 .stat-l{font-size:12px;color:var(--muted);margin-top:5px;font-weight:500}
 .tags{display:flex;flex-wrap:wrap;gap:8px;padding-top:24px;border-top:1px solid var(--border)}
 .tag{background:var(--blue-pale);color:var(--blue);padding:5px 12px;border-radius:100px;font-size:12px;font-weight:500}
-
-/* SECTIONS */
 section{padding:80px 6%;border-bottom:1px solid var(--border)}
 .alt{background:var(--off-white)}
 .dark{background:var(--blue-dark)}
@@ -57,8 +51,6 @@ h2 em{font-style:italic;color:var(--blue)}
 .dark h2 em{color:var(--blue-mid)}
 .sec-sub{font-size:16px;font-weight:300;color:var(--muted);max-width:500px;line-height:1.7;margin-bottom:52px}
 .dark .sec-sub{color:rgba(255,255,255,0.5)}
-
-/* ABOUT */
 .two-col{display:grid;grid-template-columns:1fr 1fr;gap:72px;align-items:start}
 .about-text p{font-size:16px;line-height:1.9;color:var(--muted);font-weight:300;margin-bottom:16px}
 .about-text p strong{color:var(--text);font-weight:600}
@@ -69,8 +61,6 @@ h2 em{font-style:italic;color:var(--blue)}
 .info-v a{color:var(--blue);text-decoration:none}
 .info-v a:hover{text-decoration:underline}
 .badge{background:#e6f4ea;color:#2d7d46;padding:3px 10px;border-radius:100px;font-size:12px;font-weight:600}
-
-/* EXPERIENCE */
 .exp-item{display:grid;grid-template-columns:200px 1fr;gap:48px;padding:40px 0;border-top:1px solid var(--border)}
 .exp-co{font-size:13px;font-weight:600;color:var(--blue);margin-bottom:4px}
 .exp-dates{font-size:13px;color:var(--muted);font-weight:300}
@@ -79,23 +69,17 @@ h2 em{font-style:italic;color:var(--blue)}
 .exp-list li{font-size:15px;color:var(--muted);font-weight:300;line-height:1.65;padding:7px 0 7px 20px;border-bottom:1px solid var(--border);position:relative}
 .exp-list li:last-child{border-bottom:none}
 .exp-list li::before{content:'–';position:absolute;left:0;color:var(--blue-light)}
-
-/* SKILLS */
 .skills-wrap{display:grid;grid-template-columns:repeat(3,1fr);gap:2px;background:var(--border);border:1px solid var(--border);border-radius:10px;overflow:hidden}
 .skill-group{background:var(--off-white);padding:32px}
 .sg-title{font-size:11px;font-weight:600;letter-spacing:2px;text-transform:uppercase;color:var(--blue);margin-bottom:20px}
 .sk{font-size:14px;color:var(--muted);font-weight:300;padding:8px 0;border-bottom:1px solid var(--border)}
 .sk:last-child{border-bottom:none}
-
-/* PROJECTS */
 .proj-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px}
 .proj-card{border:1px solid var(--border);border-radius:10px;padding:30px;background:var(--white);transition:border-color 0.2s,box-shadow 0.2s}
 .proj-card:hover{border-color:var(--blue);box-shadow:0 4px 20px rgba(58,95,138,0.1)}
 .proj-tag{font-size:11px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;color:var(--blue);margin-bottom:10px}
 .proj-title{font-family:'DM Serif Display',serif;font-size:19px;color:var(--blue-dark);margin-bottom:10px}
 .proj-desc{font-size:14px;color:var(--muted);line-height:1.7;font-weight:300}
-
-/* EDUCATION */
 .edu-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px}
 .edu-card{border:1px solid var(--border);border-radius:10px;padding:28px;background:var(--white)}
 .edu-type{font-size:11px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;color:var(--blue);margin-bottom:8px}
@@ -106,8 +90,6 @@ h2 em{font-style:italic;color:var(--blue)}
 .cred-icon{width:38px;height:38px;border-radius:8px;background:var(--blue-pale);display:flex;align-items:center;justify-content:center;font-size:17px;flex-shrink:0}
 .cred-name{font-size:14px;font-weight:600;color:var(--text)}
 .cred-sub{font-size:13px;color:var(--muted);font-weight:300}
-
-/* TESTIMONIALS */
 .t-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px}
 .t-card{background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:10px;padding:32px}
 .t-text{font-size:15px;color:rgba(255,255,255,0.65);line-height:1.8;font-style:italic;font-weight:300;margin-bottom:24px}
@@ -117,8 +99,6 @@ h2 em{font-style:italic;color:var(--blue)}
 .t-role{font-size:12px;color:rgba(255,255,255,0.4);font-weight:300}
 .t-note{text-align:center;margin-top:36px;font-size:14px;color:rgba(255,255,255,0.35)}
 .t-note a{color:var(--blue-mid);text-decoration:none}
-
-/* CONTACT */
 .contact-wrap{display:grid;grid-template-columns:1fr 1fr;gap:80px}
 .c-items{display:flex;flex-direction:column;gap:22px}
 .c-row{display:flex;gap:14px;align-items:flex-start}
@@ -138,13 +118,9 @@ h2 em{font-style:italic;color:var(--blue)}
 .f-btn{background:var(--blue);color:white;border:none;border-radius:var(--radius);padding:14px 28px;font-family:'DM Sans',sans-serif;font-size:14px;font-weight:600;cursor:pointer;align-self:flex-start;transition:background 0.2s}
 .f-btn:hover{background:var(--blue-dark)}
 .f-ok{display:none;background:#e6f4ea;border:1px solid #a8d5b5;border-radius:var(--radius);padding:14px;color:#2d7d46;font-size:14px;text-align:center}
-
-/* FOOTER */
 footer{padding:28px 6%;display:flex;justify-content:space-between;align-items:center;border-top:1px solid var(--border)}
 .footer-name{font-family:'DM Serif Display',serif;font-size:16px;color:var(--muted)}
 .footer-copy{font-size:13px;color:#c0ccd8}
-
-/* RESPONSIVE */
 @media(max-width:860px){
   #hero{grid-template-columns:1fr}
   .hero-card{display:none}
@@ -177,28 +153,28 @@ footer{padding:28px 6%;display:flex;justify-content:space-between;align-items:ce
 <section id="hero">
   <div>
     <div class="eyebrow-line">Open to new opportunities</div>
-    <h1>Technical Program<br>Manager | <em>Connected Systems</em></h1>
-    <p class="hero-desc">Technical Program Manager with 9+ years delivering data-driven, system-level products in startup environments — bridging engineering, data, and product teams to ship reliable connected systems.</p>
+    <h1>Senior V&amp;V &amp; Quality<br>Engineer | <em>Medical Devices</em></h1>
+    <p class="hero-desc">Senior V&amp;V &amp; Quality Engineer with 7+ years building quality into regulated medical device software — across firmware, mobile, and cloud systems — driving programs from design controls through FDA 510(k) submission.</p>
     <div class="hero-btns">
       <a href="#contact" class="btn btn-solid">Get in touch</a>
       <a href="#experience" class="btn btn-ghost">View experience</a>
-      <a href="/Chensi_Xu_Resume.pdf" download class="btn btn-ghost">↓ Resume</a>
+      <a href="/Chensi_Xu_Resume.pdf" download class="btn btn-ghost">&#8595; Resume</a>
     </div>
   </div>
   <div class="hero-card">
     <div class="card-label">Quick profile</div>
     <div class="stat-grid">
-      <div><div class="stat-n">9+</div><div class="stat-l">Years experience</div></div>
+      <div><div class="stat-n">7+</div><div class="stat-l">Years experience</div></div>
       <div><div class="stat-n">18</div><div class="stat-l">People led</div></div>
-      <div><div class="stat-n">200+</div><div class="stat-l">Devices deployed</div></div>
+      <div><div class="stat-n">200+</div><div class="stat-l">Devices validated</div></div>
       <div><div class="stat-n">2</div><div class="stat-l">510(k) submissions</div></div>
     </div>
     <div class="tags">
-      <span class="tag">Technical PM</span>
-      <span class="tag">V&V Engineering</span>
-      <span class="tag">Connected Systems</span>
-      <span class="tag">MedTech</span>
-      <span class="tag">Data Pipelines</span>
+      <span class="tag">V&amp;V Engineering</span>
+      <span class="tag">Quality Engineering</span>
+      <span class="tag">Medical Devices</span>
+      <span class="tag">IEC 62304</span>
+      <span class="tag">ISO 13485</span>
       <span class="tag">Agile</span>
     </div>
   </div>
@@ -208,18 +184,18 @@ footer{padding:28px 6%;display:flex;justify-content:space-between;align-items:ce
   <div class="eyebrow">About</div>
   <div class="two-col">
     <div class="about-text">
-      <h2>Technical Program Manager<br><em>in connected systems</em></h2>
-      <p>Technical Program Manager with 9+ years of experience delivering data-driven, system-level products in startup environments. Proven track record leading cross-functional initiatives across hardware, firmware, mobile, and cloud systems — from concept through validation, FDA 510(k) submission, and production release.</p>
-      <p>Specialized in real-world connected systems, including large-scale data collection, system validation, and algorithm development support. Experienced in bridging engineering, data science, and product teams to translate complex system behavior into actionable insights and deliver reliable, scalable solutions.</p>
+      <h2>Senior V&amp;V &amp; Quality Engineer<br><em>in regulated medical devices</em></h2>
+      <p>Senior Verification &amp; Validation Engineer with 7+ years of experience ensuring the quality and reliability of connected medical device software in regulated environments. Proven track record designing and executing end-to-end V&amp;V strategies across firmware, mobile (iOS/Android), and cloud systems — from test plan authoring through FDA 510(k) submission and design history documentation under IEC 62304 and ISO 13485.</p>
+      <p>Beyond pure V&amp;V, I've simultaneously managed multiple concurrent programs across firmware, mobile, and cloud engineering workstreams — coordinating 200+ device validation studies and aligning cross-functional teams toward shared milestones. Passionate about building quality into products that genuinely affect people's health.</p>
     </div>
     <div>
       <div class="info-row"><span class="info-k">Location</span><span class="info-v">San Jose, CA</span></div>
-      <div class="info-row"><span class="info-k">Email</span><span class="info-v"><a href="#" onclick="window.location='mai'+'lto:'+'chensi.xu'+'@yahoo.com';return false;"><span class="__cf_email__" data-cfemail="5b38333e35283275232e1b223a33343475383436">[email&#160;protected]</span></a></span></div>
+      <div class="info-row"><span class="info-k">Email</span><span class="info-v"><a href="#" onclick="window.location='mai'+'lto:'+'chensi.xu'+'@yahoo.com';return false;">chensi.xu@yahoo.com</a></span></div>
       <div class="info-row"><span class="info-k">LinkedIn</span><span class="info-v"><a href="https://linkedin.com/in/chensixu" target="_blank">linkedin.com/in/chensixu</a></span></div>
-      <div class="info-row"><span class="info-k">Focus</span><span class="info-v">TPM · V&V · Connected Systems</span></div>
-      <div class="info-row"><span class="info-k">Industries</span><span class="info-v">MedTech · Connected Devices · IoT</span></div>
+      <div class="info-row"><span class="info-k">Focus</span><span class="info-v">V&amp;V · Quality Engineering · Medical Devices</span></div>
+      <div class="info-row"><span class="info-k">Industries</span><span class="info-v">MedTech · Digital Health · Connected Devices</span></div>
       <div class="info-row"><span class="info-k">Languages</span><span class="info-v">English · Chinese · Hokkien</span></div>
-      <div class="info-row"><span class="info-k">Seeking</span><span class="info-v">Senior TPM · V&amp;V Engineer · Connected Systems</span></div>
+      <div class="info-row"><span class="info-k">Seeking</span><span class="info-v">Senior V&amp;V Engineer · Quality Engineer · Quality PM</span></div>
       <div class="info-row"><span class="info-k">Status</span><span class="info-v"><span class="badge">Open to work</span></span></div>
     </div>
   </div>
@@ -228,7 +204,7 @@ footer{padding:28px 6%;display:flex;justify-content:space-between;align-items:ce
 <section id="experience">
   <div class="eyebrow">Experience</div>
   <h2>Career <em>history</em></h2>
-  <p class="sec-sub">9+ years across technical program management, system validation, and connected device delivery in regulated MedTech startup environments.</p>
+  <p class="sec-sub">7+ years across software verification &amp; validation, quality engineering, and program management in regulated MedTech environments.</p>
 
   <div class="exp-item">
     <div>
@@ -236,13 +212,13 @@ footer{padding:28px 6%;display:flex;justify-content:space-between;align-items:ce
       <div class="exp-dates">Oct 2019 – Mar 2026</div>
     </div>
     <div>
-      <div class="exp-role">Technical Program Manager → V&amp;V Engineer</div>
-      <div style="font-size:13px;color:var(--muted);margin-bottom:12px;font-style:italic">Program Management (2019–2022) · V&amp;V Engineering (2022–2026)</div>
+      <div class="exp-role">Project Manager → V&amp;V Engineer</div>
+      <div style="font-size:13px;color:var(--muted);margin-bottom:12px;font-style:italic">Project Management (2019–2022) · V&amp;V Engineering (2022–2026)</div>
       <ul class="exp-list">
-        <li>Led cross-functional mobile and device programs across iOS, Android, and connected systems — directing BioHub Wi-Fi gateway from concept through deployment and managing scope, timelines, and stakeholder alignment</li>
-        <li>Led large-scale data collection initiatives (200+ devices, 65+ participants) enabling algorithm development and supporting initial 510(k) submission</li>
-        <li>Transitioned into system-level V&amp;V — validating real-world performance, connectivity, and data reliability across mobile, firmware, and connected device platforms</li>
-        <li>Established end-to-end requirements traceability in Jama Connect and drove audit-ready verification documentation supporting 510(k) submission</li>
+        <li>Owned end-to-end software V&amp;V for connected medical device platforms spanning firmware, mobile (iOS/Android), and cloud — authoring test strategies, executing validation protocols, and managing design history documentation under IEC 62304 and ISO 13485</li>
+        <li>Led risk management, CAPA, and non-conformance investigations — performing root cause analysis across multi-layer systems and driving corrective actions with engineering teams</li>
+        <li>Maintained audit-ready documentation including test protocols, traceability matrices, and formal V&amp;V reports supporting two FDA 510(k) submissions</li>
+        <li>Simultaneously managed multiple concurrent programs across firmware, mobile, and cloud workstreams — coordinating 200+ device validation studies and aligning cross-functional teams toward shared milestones</li>
       </ul>
     </div>
   </div>
@@ -260,41 +236,39 @@ footer{padding:28px 6%;display:flex;justify-content:space-between;align-items:ce
       </ul>
     </div>
   </div>
-
-
 </section>
 
 <section id="skills" class="alt">
   <div class="eyebrow">Skills</div>
   <h2>Core <em>competencies</em></h2>
-  <p class="sec-sub">Cross-functional leadership and technical depth across connected systems, system validation, and data-driven product delivery.</p>
+  <p class="sec-sub">Technical depth and regulatory expertise across software V&amp;V, quality engineering, and connected medical device platforms.</p>
   <div class="skills-wrap">
     <div class="skill-group">
       <div class="sg-title">Verification &amp; Validation</div>
-      <div class="sk">Medical Device Software Validation</div>
-      <div class="sk">V&amp;V Test Plan Development</div>
+      <div class="sk">Medical Device Software V&amp;V</div>
+      <div class="sk">Test Plan &amp; Protocol Development</div>
       <div class="sk">Functional &amp; Regression Testing</div>
-      <div class="sk">Firmware &amp; Integration Testing</div>
-      <div class="sk">Regulatory Compliance (FDA/SaMD)</div>
-      <div class="sk">Defect Tracking &amp; Traceability</div>
+      <div class="sk">System &amp; Integration Testing</div>
+      <div class="sk">Design History Files (DHF)</div>
+      <div class="sk">Requirements Traceability (Jama)</div>
     </div>
     <div class="skill-group">
-      <div class="sg-title">Program Management</div>
-      <div class="sk">Technical Program Management</div>
-      <div class="sk">Agile / Scrum</div>
-      <div class="sk">Cross-functional Leadership</div>
-      <div class="sk">Risk Management</div>
-      <div class="sk">Data Pipeline Ownership</div>
-      <div class="sk">Onshore &amp; Offshore Coordination</div>
+      <div class="sg-title">Quality &amp; Regulatory</div>
+      <div class="sk">FDA 21 CFR 820 · IEC 62304 · ISO 13485</div>
+      <div class="sk">ISO 14971 Risk Management</div>
+      <div class="sk">CAPA &amp; Non-conformance Management</div>
+      <div class="sk">Audit Preparation &amp; Support</div>
+      <div class="sk">SOP Authoring &amp; Maintenance</div>
+      <div class="sk">Cross-functional Program Management</div>
     </div>
     <div class="skill-group">
       <div class="sg-title">Tools &amp; Technologies</div>
       <div class="sk">JIRA &amp; Confluence</div>
-      <div class="sk">Jama Connect (Requirements &amp; Traceability)</div>
-      <div class="sk">TestRail</div>
+      <div class="sk">Jama Connect</div>
+      <div class="sk">SQL (Databricks)</div>
+      <div class="sk">Python (scripting, log parsing)</div>
       <div class="sk">GitHub / Version Control</div>
-      <div class="sk">Excel &amp; Google Sheets</div>
-      <div class="sk">SQL &amp; Python</div>
+      <div class="sk">Agile / Scrum</div>
     </div>
   </div>
 </section>
@@ -307,12 +281,12 @@ footer{padding:28px 6%;display:flex;justify-content:space-between;align-items:ce
     <div class="proj-card">
       <div class="proj-tag">MedTech · V&amp;V</div>
       <div class="proj-title">Connected Medical Device Validation</div>
-      <div class="proj-desc">End-to-end V&amp;V for BioIntelliSense's connected medical device platform — mobile apps, firmware, and gateway hardware across multiple regulatory releases.</div>
+      <div class="proj-desc">End-to-end V&amp;V for BioIntelliSense's connected medical device platform — mobile apps, firmware, and gateway hardware across multiple regulatory releases supporting FDA 510(k) submissions.</div>
     </div>
     <div class="proj-card">
-      <div class="proj-tag">IoT · Program Management</div>
-      <div class="proj-title">BioHub Wi-Fi Gateway Program</div>
-      <div class="proj-desc">Directed the BioHub Wi-Fi gateway from concept through production — scope, cross-functional timelines, vendor coordination, and stakeholder communication.</div>
+      <div class="proj-tag">Quality · Regulatory</div>
+      <div class="proj-title">FDA 510(k) Design History Documentation</div>
+      <div class="proj-desc">Authored and maintained complete design history files — test protocols, traceability matrices, V&amp;V summary reports, and CAPA records — supporting two successful FDA 510(k) submissions under IEC 62304 and ISO 13485.</div>
     </div>
     <div class="proj-card">
       <div class="proj-tag">Data · ML</div>
@@ -330,9 +304,9 @@ footer{padding:28px 6%;display:flex;justify-content:space-between;align-items:ce
       <div class="proj-desc">Delivered Striiv Mainline Apps, Pfizer Believe App, and CHR1 — coordinating onshore and offshore teams through planning, execution, and release.</div>
     </div>
     <div class="proj-card">
-      <div class="proj-tag">Gaming · Asset Coordination</div>
-      <div class="proj-title">Marvel &amp; Ubisoft Art Production</div>
-      <div class="proj-desc">Coordinated art for Xmen Battle of the Atom and Assassin's Creed: Memories — managing Marvel licensing, overseas studios, achieving 100% on-time delivery.</div>
+      <div class="proj-tag">IoT · Program Management</div>
+      <div class="proj-title">BioHub Wi-Fi Gateway Program</div>
+      <div class="proj-desc">Directed the BioHub Wi-Fi gateway from concept through production — scope, cross-functional timelines, vendor coordination, and stakeholder communication.</div>
     </div>
   </div>
 </section>
@@ -394,7 +368,7 @@ footer{padding:28px 6%;display:flex;justify-content:space-between;align-items:ce
         <span class="tag">PWA</span>
         <span class="tag">Geospatial</span>
       </div>
-      <a href="https://ca-fish-regs.vercel.app" target="_blank" style="display:inline-block;background:var(--blue);color:white;padding:9px 20px;border-radius:var(--radius);font-size:13px;font-weight:600;text-decoration:none;transition:background 0.2s" onmouseover="this.style.background='#1e3a5f'" onmouseout="this.style.background='#3a5f8a'">View Live App →</a>
+      <a href="https://ca-fish-regs.vercel.app" target="_blank" style="display:inline-block;background:var(--blue);color:white;padding:9px 20px;border-radius:var(--radius);font-size:13px;font-weight:600;text-decoration:none;transition:background 0.2s" onmouseover="this.style.background='#1e3a5f'" onmouseout="this.style.background='#3a5f8a'">View Live App &#8594;</a>
     </div>
     <div class="proj-card">
       <div class="proj-tag">Portfolio · Web Development</div>
@@ -406,7 +380,7 @@ footer{padding:28px 6%;display:flex;justify-content:space-between;align-items:ce
         <span class="tag">Formspree</span>
         <span class="tag">DNS Configuration</span>
       </div>
-      <a href="https://chensixu.com" target="_blank" style="display:inline-block;background:var(--off-white);color:var(--blue);border:1.5px solid var(--border);padding:9px 20px;border-radius:var(--radius);font-size:13px;font-weight:600;text-decoration:none">You're looking at it →</a>
+      <a href="https://chensixu.com" target="_blank" style="display:inline-block;background:var(--off-white);color:var(--blue);border:1.5px solid var(--border);padding:9px 20px;border-radius:var(--radius);font-size:13px;font-weight:600;text-decoration:none">You're looking at it &#8594;</a>
     </div>
   </div>
 </section>
@@ -457,18 +431,18 @@ footer{padding:28px 6%;display:flex;justify-content:space-between;align-items:ce
       </div>
     </div>
   </div>
-  <p class="t-note">View full recommendations on <a href="https://linkedin.com/in/chensixu" target="_blank">LinkedIn →</a></p>
+  <p class="t-note">View full recommendations on <a href="https://linkedin.com/in/chensixu" target="_blank">LinkedIn &#8594;</a></p>
 </section>
 
 <section id="contact">
   <div class="eyebrow">Contact</div>
   <h2>Let's <em>connect</em></h2>
-  <p class="sec-sub">Open to V&amp;V Engineer, QA Lead, and Technical PM roles. Reach out anytime.</p>
+  <p class="sec-sub">Open to Senior V&amp;V Engineer, Quality Engineer, and Quality Program Manager roles in medical devices and regulated software. Reach out anytime.</p>
   <div class="contact-wrap">
     <div class="c-items">
       <div class="c-row">
         <div class="c-icon">📧</div>
-        <div><div class="c-label">Email</div><div class="c-val"><a href="#" onclick="window.location='mai'+'lto:'+'chensi.xu'+'@yahoo.com';return false;"><span class="__cf_email__" data-cfemail="37545f5259445e194f42774e565f58581954585a">[email&#160;protected]</span></a></div></div>
+        <div><div class="c-label">Email</div><div class="c-val"><a href="#" onclick="window.location='mai'+'lto:'+'chensi.xu'+'@yahoo.com';return false;">chensi.xu@yahoo.com</a></div></div>
       </div>
       <div class="c-row">
         <div class="c-icon">📍</div>
@@ -500,7 +474,7 @@ footer{padding:28px 6%;display:flex;justify-content:space-between;align-items:ce
       </div>
       <div class="f-group">
         <label class="f-label">Role / Opportunity</label>
-        <input class="f-input" type="text" name="role" placeholder="e.g. V&amp;V Engineer, QA Lead, PM...">
+        <input class="f-input" type="text" name="role" placeholder="e.g. Senior V&amp;V Engineer, Quality Engineer, Quality PM...">
       </div>
       <div class="f-group">
         <label class="f-label">Message</label>
@@ -530,7 +504,6 @@ async function handleSubmit(e) {
       headers: { 'Accept': 'application/json' }
     });
     if (res.ok) {
-      
       document.getElementById('formOk').style.display = 'block';
       btn.style.display = 'none';
       e.target.reset();
