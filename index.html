@@ -190,7 +190,7 @@ footer{padding:28px 6%;display:flex;justify-content:space-between;align-items:ce
       <p>Technical Program Manager and V&amp;V Engineer with 7+ years of experience in regulated medical device environments — spanning full product program delivery, large-scale physiological data collection operations, and formal software verification and validation.</p>
       <p>At BioIntelliSense, I led iOS/Android mobile applications and the BioHub Wi-Fi gateway from concept through commercial launch while simultaneously owning large-scale data collection programs end-to-end — recruiting 300+ participants, setting up ground truth devices (Faros ECG monitors, Capnostream capnography), authoring protocols, managing ICF and consent workflows, collecting multimodal physiological signals (step/gait, HR, RR, temperature, audio), and owning the full data labeling, annotation, and cleaning pipeline with internal data scientists and Lofty Consulting (Australia).</p>
       <p>As V&amp;V Engineer, I led software V&amp;V across firmware, mobile, and cloud platforms — supporting three FDA 510(k) submissions under IEC 62304 and ISO 13485, and authoring 1,000-cycle cleaning and disinfection validation protocols for wearable device reprocessing.</p>
-      <p>I'm also a hands-on AI builder — built and shipped <strong>Fish Smarter</strong> using Claude (Anthropic) and Gemini AI APIs, and built this portfolio site with Claude's help. I use Claude daily as a productivity and problem-solving tool.</p>
+      <p>I'm also a hands-on AI builder — built and shipped <strong>Fish Smarter</strong> using Claude (Anthropic) and Gemini AI APIs, built a <strong>MedTech digital twin simulation platform</strong> for wearable device V&amp;V, and built this portfolio site with Claude's help. I use Claude daily as a productivity and problem-solving tool.</p>
     </div>
     <div>
       <div class="info-row"><span class="info-k">Location</span><span class="info-v">San Jose, CA</span></div>
@@ -219,6 +219,7 @@ footer{padding:28px 6%;display:flex;justify-content:space-between;align-items:ce
       <div class="exp-role">AI Application Developer</div>
       <ul class="exp-list">
         <li>Built and shipped Fish Smarter (ca-fish-regs.vercel.app) — a mobile-first PWA integrating Claude (Anthropic) and Gemini AI APIs for real-time fish species identification and California fishing regulation lookup; used Claude throughout the development process as well as at the API integration level</li>
+        <li>Built a MedTech digital twin and simulation platform (wearable-sim.netlify.app) — generates synthetic wearable physiology with circadian coupling, simulates firmware behavior across versions, and stress-tests gateway/cloud pipelines with configurable fault injection; validation engine produces requirement- and risk-mapped traceable pass/fail reports</li>
         <li>Built personal portfolio website (chensixu.com) with Claude — applying AI tools throughout product design and development workflows</li>
         <li>Daily Claude user for problem-solving, job preparation, drafting communications, and working through complex decisions</li>
       </ul>
@@ -384,6 +385,8 @@ footer{padding:28px 6%;display:flex;justify-content:space-between;align-items:ce
   <h2>Built <em>independently</em></h2>
   <p class="sec-sub">Side projects built with Claude and Gemini AI — demonstrating hands-on AI application development beyond professional roles.</p>
   <div class="proj-grid">
+
+    <!-- Fish Smarter -->
     <div class="proj-card" style="border-color:var(--blue);position:relative">
       <div style="position:absolute;top:16px;right:16px;background:var(--blue-pale);color:var(--blue);font-size:11px;font-weight:600;padding:3px 10px;border-radius:100px;letter-spacing:1px">LIVE</div>
       <div class="proj-tag">AI · PWA · Full Stack</div>
@@ -399,6 +402,25 @@ footer{padding:28px 6%;display:flex;justify-content:space-between;align-items:ce
       </div>
       <a href="https://ca-fish-regs.vercel.app" target="_blank" style="display:inline-block;background:var(--blue);color:white;padding:9px 20px;border-radius:var(--radius);font-size:13px;font-weight:600;text-decoration:none;transition:background 0.2s" onmouseover="this.style.background='#1e3a5f'" onmouseout="this.style.background='#3a5f8a'">View Live App &#8594;</a>
     </div>
+
+    <!-- Wearable Digital Twin Sim -->
+    <div class="proj-card" style="border-color:var(--blue);position:relative">
+      <div style="position:absolute;top:16px;right:16px;background:var(--blue-pale);color:var(--blue);font-size:11px;font-weight:600;padding:3px 10px;border-radius:100px;letter-spacing:1px">LIVE</div>
+      <div class="proj-tag">MedTech · Digital Twin · V&amp;V</div>
+      <div class="proj-title">Wearable Device Digital Twin &amp; Simulation Platform</div>
+      <div class="proj-desc" style="margin-bottom:16px">End-to-end simulation and validation platform for connected wearable medical devices. Generates synthetic patient physiology (HR, RR, temperature, gait, sleep stages) with realistic circadian coupling, simulates firmware behavior across versions, and stress-tests gateway/cloud pipelines under configurable fault conditions — Wi-Fi outages, BLE failures, packet loss, and auth errors. Validation engine produces traceable pass/fail reports mapped to requirement and risk IDs.</div>
+      <div style="display:flex;flex-wrap:wrap;gap:6px;margin-bottom:16px">
+        <span class="tag">Python</span>
+        <span class="tag">Digital Twin</span>
+        <span class="tag">BLE Simulation</span>
+        <span class="tag">Synthetic Physiology</span>
+        <span class="tag">Fault Injection</span>
+        <span class="tag">V&amp;V Reporting</span>
+      </div>
+      <a href="https://wearable-sim.netlify.app/" target="_blank" style="display:inline-block;background:var(--blue);color:white;padding:9px 20px;border-radius:var(--radius);font-size:13px;font-weight:600;text-decoration:none;transition:background 0.2s" onmouseover="this.style.background='#1e3a5f'" onmouseout="this.style.background='#3a5f8a'">View Live App &#8594;</a>
+    </div>
+
+    <!-- Portfolio -->
     <div class="proj-card">
       <div class="proj-tag">Portfolio · Web Development · AI-Assisted</div>
       <div class="proj-title">Personal Portfolio Website</div>
@@ -411,6 +433,7 @@ footer{padding:28px 6%;display:flex;justify-content:space-between;align-items:ce
       </div>
       <a href="https://chensixu.com" target="_blank" style="display:inline-block;background:var(--off-white);color:var(--blue);border:1.5px solid var(--border);padding:9px 20px;border-radius:var(--radius);font-size:13px;font-weight:600;text-decoration:none">You're looking at it &#8594;</a>
     </div>
+
   </div>
 </section>
 
